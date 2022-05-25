@@ -1,0 +1,11 @@
+version: '3'
+services: 
+  app:
+    image: geovanedasilva/efficientorg
+    container_name: 'efficientorg'
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - HOST:0.0.0.0
+      - PORT=3000
